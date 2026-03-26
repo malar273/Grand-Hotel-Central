@@ -1,0 +1,105 @@
+/* Deluxe Renovation Section */
+.deluxe-renovation-section {
+    display: flex;
+    width: 100%;
+    margin-top: 4rem;
+    align-items: stretch;
+    background-color: #fff;
+}
+
+.deluxe-renovation-text-col {
+    flex: 1;
+    padding: 4rem 4rem 4rem 8rem;
+    /* Left padding for Indent */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.deluxe-renovation-image-col {
+    flex: 1;
+    position: relative;
+    min-height: 600px;
+}
+
+.deluxe-renovation-image-col img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.deluxe-renovation-title {
+    font-family: var(--hotel-font-serif);
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1;
+    color: #121212;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.deluxe-renovation-desc {
+    font-family: var(--hotel-font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.deluxe-read-more {
+    font-family: var(--hotel-font-sans);
+    font-weight: bold;
+    color: #121212;
+    text-decoration: underline;
+    margin-bottom: 3rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.deluxe-facilities-title {
+    font-family: var(--hotel-font-serif);
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #4a6fa5;
+    /* Blue hue similar to screenshot */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Specific Blue matching screenshot more closely if needed, adjusting to #3b5d96 or similar standard blue used in designs */
+.deluxe-facilities-title {
+    color: #2b55ff;
+    /* Bright blue from screenshot */
+    font-family: var(--hotel-font-serif);
+    /* Or a thinner serif */
+    font-weight: 100;
+}
+
+.deluxe-facilities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+    font-family: var(--hotel-font-sans);
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.deluxe-facility-item {
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .deluxe-renovation-section {
+        flex-direction: column;
+    }
+
+    .deluxe-renovation-text-col {
+        padding: 3rem 2rem;
+    }
+
+    .deluxe-renovation-image-col {
+        min-height: 400px;
+    }
+}
